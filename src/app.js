@@ -17,7 +17,6 @@ var passport = require("passport");
 const hbs = require("hbs");
 
 var app = express();
-var port = process.env.port || 3000;
 
 require("./db/mongoose");
 require("./config/passport")(passport); // pass passport for configuration
