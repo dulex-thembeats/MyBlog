@@ -1,0 +1,43 @@
+  <!-- Navigation -->
+ {{> header}}
+
+  <!-- Page Header -->
+ <header class="masthead" style="background-image: url('img/brick-brickwall-brickwork-cement-276514.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Welcome to LexLab</h1>
+            <span class="subheading">A Collection of personal musings by Dulex(Muhammad Abdulkadir)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+         {{#each post}}
+        <div class="post-preview">
+          <a href="/{{this._id}}">
+            <h2 class="post-title">
+           {{this.title}}
+            </h2>
+            <h3 class="post-subtitle">
+             {{this.description}}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Dulex</a>
+            {{this.createdAt}} </p>
+        </div>
+        <hr>
+      {{/each}}
+
+      {{> footer}}
+
+</body>
+
+</html>

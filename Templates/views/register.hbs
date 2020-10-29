@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="/css/login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+		<form action="/signup" method="POST">
+			<img src="https://res.cloudinary.com/dejzo3x6l/image/upload/v1462601844/login%20page%20design/3.png" alt="Profile-pic">
+			{{message}}
+            <h2>Register</h2>
+            <div class="input_box">
+				<input type="text" name="email" placeholder="User Name">
+			</div>
+			<div class="input_box">
+				<input type="password" name="password" placeholder="Password">
+			</div>
+			<button type="submit" name="submit" value="Login" class="submit_btn">Register</button>
+			{{!-- <br><a href="#" class="for_pass">Request sign up</a> --}}
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/ba2bd390-ecab-4418-bcfd-be2da26589ae/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Blog-lex",
+    "appService.deploySubpath": "."
+}
